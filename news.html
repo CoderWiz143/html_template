@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .play_btn button {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Times New Roman';    
+        }
+
+
+        .play_btn button:hover {
+            background-color: aquamarine;
+            color: white;
+        }
+        *{
+            text-decoration: none;
+        }
+        .container0 {
+    display: flex;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 55%;
+}
+        .main-content a{
+            color:black;
+        }       
+.main-content a:hover{
+     color: #66CCAA;
+} 
+.post {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(50% - 10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post p {
+    margin: 10px;
+    color: #888;
+}
+
+.post h2 {
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar1 {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.search-bar1 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.popular-posts, .categories {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.popular-posts h3, .categories h3 {
+    margin-top: 0;
+}
+
+.popular-post {
+    display: flex;
+    margin-bottom: 10px;
+}
+        .popular-post p:hover,img:hover {
+            cursor: pointer;
+        }
+.popular-post img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.popular-post p {
+    margin: 0;
+    line-height: 50px;
+    color: #333;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 10px;
+    color: #333;
+}
+       
+         </style>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    </head>
+<body>
+<div class="background">
+    <h1 id="heading1">Hepta</h1>
+    <h1 id="heading2">Our Hotel</h1>
+    <p id="par1">A free template by <a style="text-decoration: none" class="hilink" href="https://www.colorlib.com">Colorlib.</a> Download and share!</p>
+    <button>Visit Colorlib</button>
+    <div class="menu-toggle">&#9766;</div>
+    <div class="menu">
+        <div class="closer">&times;</div> 
+    <nav>    
+        <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a href="hotel.html">Hotels</a></li>
+         <li><a href="about-us.html">About</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="news.html">News</a></li>
+         <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+    </nav>
+    </div>
+</div>
+  <div class="container0">
+        <div class="main-content">
+            <div class="post">
+                <img src="image1.jpg" alt="Post Image">
+                <p>February 28, 2018</p>
+                <h2><a href="#">Free Template by Colorlib</a></h2>
+            </div>
+            <div class="post">
+                <img src="image2.jpg" alt="Post Image">
+                <p>February 28, 2018</p>
+                <h2><a href="#">Free Template by Colorlib</a></h2>
+            </div>
+            <div class="post">
+                <img src="image1.jpg" alt="Post Image">
+                <p>February 28, 2018</p>
+                <h2><a href="#>">Free Template by Colorlib</a></h2>
+            </div>
+            <div class="post">
+                <img src="image2.jpg" alt="Post Image">
+                <p>February 28, 2018</p>
+                <h2><a href="#>">Free Template by Colorlib</a></h2>
+            </div>
+        </div>
+        <div class="sidebar1">
+            <div class="search-bar1">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="popular-posts">
+                <h3>Popular Post</h3>
+                <div class="popular-post">
+                    <img src="img3.jpg" alt="Thumbnail">
+                    <p>Free Template by Colorlib</p>
+                </div>
+                <div class="popular-post">
+                    <img src="img2.jpg" alt="Thumbnail">
+                    <p>Free Template by Colorlib</p>
+                </div>
+                <div class="popular-post">
+                    <img src="img1.jpg" alt="Thumbnail">
+                    <p>Free Template by Colorlib</p>
+                </div>
+                <div class="popular-post">
+                    <img src="img3.jpg" alt="Thumbnail">
+                    <p>Free Template by Colorlib</p>
+                </div>
+            </div>
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Events (12)</li>
+                    <li>Relax (4)</li>
+                    <li>Celebration (22)</li>
+                    <li>Promos (8)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="section-fr">
+        
+        <div class="box-f">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Rooms</a></li>
+            </ul>
+        </div>
+        
+        <div class="box-f">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Our Location</a></li>
+                <li><a href="#">The Hosts</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact.html">Conatct</a></li>
+                <li><a href="#">Restaurant</a></li>
+            </ul>
+        </div>
+        
+        <div class="box-f">
+            <h3>Contact Info</h3>
+            <h4>Address:</h4>
+              <p style="padding-left: 1px;">  98 West 21th Street, Suite 721 New York NY 10016
+            </p>
+            <h4>Phone:</h4>
+            <p style="padding-left: 1px;">(+1) 435 3533
+            </p>
+            
+            <h4>Email:</h4>
+            <p style="padding-left: 1px;">info@yourdomain.com
+            </p>
+        </div>
+        
+        <div class="box-f">
+         <h3>Subscribe</h3>
+            <p style="padding-left: 1px;">Subscribe for the Newsletter</p>
+            <input type="email" placeholder="Your Email" required>
+        
+        </div>
+    </div>
+    <div class="box-f-b">
+    <p>&copy; 2024 All Rights Reserved | This template is made with  by Colorlib</p>
+    </div>
+</footer>        
+    
+    
+    <script src="script.js"></script>
+    </body>
+</html>

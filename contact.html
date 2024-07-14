@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .play_btn button {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Times New Roman';    
+        }
+
+
+        .play_btn button:hover {
+            background-color: aquamarine;
+            color: white;
+        }
+        .h-gallery{
+            height: 100vh;
+            width: auto;
+            align-content: center;
+        }
+        .h-gallery h1{
+            text-align: center;
+            font-size: 72px;
+            font-family: 'Times New Roman';
+            font-weight: 65;
+        }
+        .h-gallery p{
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-family: 'Arial'
+        }
+        .h-gallery img{
+            display: inline-block;
+            height: 30%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .feature{
+            height: 100vh;
+            align-content: center;
+        }
+        .feature h1{
+             text-align: center;
+            font-size: 72px;
+            font-family: 'Times New Roman';
+            font-weight: 65;
+        }
+        .feature p{
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-family: 'Arial'
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+         }
+        .box img {
+            width: 100%;
+            height: auto;
+            display: block;
+         }
+
+        .box-title {
+            padding: 10px;
+            font-size: 1.1em;
+            color: #333;
+            border-top: 1px solid #eee;
+
+        }   
+        .box-title a{
+            text-decoration: none;
+            color: black;
+        }
+        .box-title a:hover{
+             color: #66CCAA;
+        } 
+        .team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    align-content: center;
+    height: 100vh;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input[type="text"], .form-group input[type="email"] {
+    width: calc(50% - 10px);
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+button {
+   /* align-self: flex-start; */
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.contact-info {
+    width: 35%;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 0 0 15px 0;
+}
+
+.contact-info strong {
+    color: #5cb85c;
+}
+        
+    </style>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+   
+</head>
+<body>
+<div class="background">
+    <h1 id="heading1">Hepta</h1>
+    <h1 id="heading2">Our Hotel</h1>
+    <p id="par1">A free template by <a style="text-decoration: none" class="hilink" href="https://www.colorlib.com">Colorlib.</a> Download and share!</p>
+    <button>Visit Colorlib</button>
+    <div class="menu-toggle">&#9766;</div>
+    <div class="menu">
+        <div class="closer">&times;</div> 
+    <nav>    
+        <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a href="hotel.html">Hotels</a></li>
+         <li><a href="about-us.html">About</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="news.html">News</a></li>
+         <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+    </nav>
+    </div>
+</div>
+<div class="contact-container">
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Write Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p><strong>Address:</strong><br>
+                98 West 21th Street, Suite 721<br>
+                New York NY 10016</p>
+            <p><strong>Phone:</strong><br>
+                (+1) 435 3533</p>
+            <p><strong>Email:</strong><br>
+                info@yourdomain.com</p>
+        </div>
+    </div>  
+
+    <div class="costumers">
+        <h1>Happy Costumers</h1>
+        
+        <div class="box4">
+        <div class="icon">
+            <img src="user.png" alt="Good Foods Icon">
+        </div>
+
+        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.rdquo;</p>
+        <p class="user-name"> -- Clare Gupta</p>
+    </div>
+        
+        <div class="box4">
+        <div class="icon">
+            <img src="user.png" alt="Good Foods Icon">
+        </div>
+        
+        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.rdquo;</p>
+            <p class="user-name">-- Rogie Slater</p>    
+    </div>
+        
+        <div class="box4">
+        <div class="icon">
+            <img src="user.png" alt="Good Foods Icon">
+        </div>
+        
+        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.rdquo;.</p>
+            <p class="user-name">-- John Doe</p>
+    </div>
+        
+    </div>
+
+   
+<footer>
+    <div class="section-fr">
+        
+        <div class="box-f">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Rooms</a></li>
+            </ul>
+        </div>
+        
+        <div class="box-f">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Our Location</a></li>
+                <li><a href="#">The Hosts</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact.html">Conatct</a></li>
+                <li><a href="#">Restaurant</a></li>
+            </ul>
+        </div>
+        
+        <div class="box-f">
+            <h3>Contact Info</h3>
+            <h4>Address:</h4>
+              <p style="padding-left: 1px;">  98 West 21th Street, Suite 721 New York NY 10016
+            </p>
+            <h4>Phone:</h4>
+            <p style="padding-left: 1px;">(+1) 435 3533
+            </p>
+            
+            <h4>Email:</h4>
+            <p style="padding-left: 1px;">info@yourdomain.com
+            </p>
+        </div>
+        
+        <div class="box-f">
+         <h3>Subscribe</h3>
+            <p style="padding-left: 1px;">Subscribe for the Newsletter</p>
+            <input type="email" placeholder="Your Email" required>
+        
+        </div>
+    </div>
+    <div class="box-f-b">
+    <p>&copy; 2024 All Rights Reserved | This template is made with  by Colorlib</p>
+    </div>
+</footer>        
+    
+    
+    <script src="script.js"></script>
+    </body>
+</html>
